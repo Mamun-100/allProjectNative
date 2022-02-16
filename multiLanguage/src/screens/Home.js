@@ -1,15 +1,14 @@
-import { View } from 'react-native'
-import React from 'react'
-import { useTranslation } from 'react-i18next'
+import React from 'react';
+import { Text, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
+import About from './About';
 
-export default function Home() {
-  const {t} = useTranslation();
+export default function HomeScreen() {
+  const { t } = useTranslation();
   return (
-    <View>
-      <Text>{t('common:hello')}</Text>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 28,color:'red' }}>{t('common:hello')}</Text>
+      <About/>
     </View>
   );
 }
-
-
-

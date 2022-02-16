@@ -1,4 +1,5 @@
 export default {
-    home:'হোম',
-    setting:'সেটিং'
-}
+  home: 'হোম',
+  about: 'সম্পর্কে',
+  settings: 'সেটিং'
+};
