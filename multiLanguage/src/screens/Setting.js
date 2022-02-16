@@ -1,14 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { View } from 'react-native';
+import React from 'react';
+import Selector from '../components/LanguageSelector';
 
-const Setting = () => {
+export default function Setting() {
   return (
     <View>
-      <Text>Setting</Text>
+      <Selector />
     </View>
   )
-}
-
-export default Setting
-
-const styles = StyleSheet.create({})
+};

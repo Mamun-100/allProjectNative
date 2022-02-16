@@ -1,14 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { View } from 'react-native'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
-const Home = () => {
+export default function Home() {
+  const {t} = useTranslation();
   return (
     <View>
-      <Text>Home</Text>
+      <Text>{t('common:hello')}</Text>
     </View>
-  )
+  );
 }
 
-export default Home
 
-const styles = StyleSheet.create({})
+
